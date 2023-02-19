@@ -1,0 +1,79 @@
+@import url('https://css.gg/log-in.css');
+
+:root {
+    --white-color: #fff;
+    --text-color: #6C7682;
+    --hover-color: #ddd;
+    --black-color: #000;
+}
+
+.nav {
+    display: flex;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    padding: 15px 50px 10px 50px;
+}
+
+.nav-logo {
+    display: flex;
+    box-sizing: 10px;
+}
+
+.nav-logo img {
+    width: 50px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+.nav-logo h1 {
+    color: var(--white-color);
+}
+
+.nav ul {
+    direction: rtl;
+    list-style: none;
+    display: flex;
+    position: relative;
+    right: 50%;
+    left: 50%;
+    padding-top: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-color);
+    margin-right: 25px;
+}
+
+.nav-link:hover {
+    transition-duration: .3s;
+    color: var(--hover-color);
+}
+
+.sign-up {
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+}
+
+.active {
+    cursor: pointer;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: var(--white-color);
+    color: var(--black-color);
+    border-radius: 30px;
+}
+
+.active:hover {
+    background-color: var(--black-color);
+    border: solid 2px var(--white-color);
+}
+
+.sign-up i {
+    margin-top: 20px;
+    margin-right: 10px;
+    color: var(--white-color);
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="<%- info.logo %>">
+    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/games.css">
+    <title><%= info.name %></title>
+</head>
+<body>
+
+    <%- include('../include/header.ejs') %>
+
+    <div class="games">
+        <div class="game">
+            <div class="game-text">
+                <div class="game-h1">
+                    <h1><%= fortnite.gameName %></h1>
+                </div>
+                <div class="game-p">
+                    <%= fortnite.description %>
+                </div>
+                <div class="game-link">
+                    <a href="<%- fortnite.downloadLink %>">رابط التحميل</a>
+                </div>
+            </div>
+            <img src="<%= fortnite.image %>" alt="">
+        </div>
+
+        <hr>
+
+        <div class="game">
+            <div class="game-h1">
+                <h1><%= cod.gameName %></h1>
+            </div>
+            <div class="game-p">
+                <%= cod.description %>
+            </div>
+            <div class="game-link">
+                <a href="<%= cod.downloadLink %>">رابط التحميل</a>
+            </div>
+            <img src="<%- cod.image %>" alt="">
+        </div>
+    </div>
+
+    <hr>
+    
+</body>
+</html>

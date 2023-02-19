@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Open+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@700&family=Roboto+Mono:wght@200;300;400;500;700&family=Work+Sans:wght@100;200;300;400;500;600&display=swap');
+:root {
+    --white-color: #fff;
+    --text-color: #6C7682;
+    --hover-color: #ddd;
+    --black-color: #000;
+}
+
+::selection {
+    color: var(--black-color);
+    background-color: var(--white-color);
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../assets/technology-esports.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Cairo', sans-serif;
+}
+
+.main {
+    position: relative;
+    top: 30%;
+    margin-left: 100px;
+    max-width: 500px;
+}
+
+.main h1 {
+    font-size: 50px;
+    color: var(--white-color);
+    margin-bottom: 30px;
+}
+
+.main p {
+    color: var(--text-color);
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.main img {
+    position: relative;
+    top: 10px;
+    right: 5px;
+    width: 32px;
+}
+
+.main a {
+    text-decoration: none;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border-radius: 30px;
+    padding: 10px;
+}
+.main a:hover {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    transition-duration: .3s;
+}
